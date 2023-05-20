@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação 2o grau</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Equação 2<sup>o</sup> grau</h1>
+        <form action="#">
+            <label>Insira os valores para <i>a</i>, <i>b</i> e <i>c</i>:</label>
+            <div>
+                <p>
+                    <input type="text" name="a" placeholder="a" required id="a">x<sup>2</sup> +
+                    <input type="text" name="b" placeholder="b" required id="b">x +
+                    <input type="text" name="c" placeholder="c" required id="c"> = 0
+                </p>
+                <button>Calcular</button>
+            </div>
+        </form>
+        <div class="validacao"></div>
+        <div class="div-expressao">Expressão: <span class="expressao"></span></div>
+        <div>Raíz<span class="complexo-ou-real"></span>: <p class="raizes"></p></div>
+        <div class="resultado"></div>
+    </section>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
