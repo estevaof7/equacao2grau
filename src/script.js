@@ -26,7 +26,7 @@ document.querySelector('form').addEventListener('submit', function (parametro) {
                 raizes.innerHTML = ``;
                 compOuR(``);
             } else {
-                compOuR(` Real`);
+                compOuR(` (Real)`);
                 if (c === 0) {
                     expressao.innerHTML = `${b}x = 0`;
                     raizes.innerHTML = `x = 0`;
@@ -42,14 +42,14 @@ document.querySelector('form').addEventListener('submit', function (parametro) {
         } else {
             const delta = b**2 - 4 * a * c;
             if (delta === 0) {
-                compOuR(` Real`);
+                compOuR(` (Real)`);
                 raizes.innerHTML = `x = ${(b * -1) / (a * 2)}`;
             } else if (delta > 0) {
-                compOuR(`es Reais`);
+                compOuR(`s (Real)`);
                 raizes.innerHTML = `x<sub>1</sub> = ${((b * -1) + (delta**(1/2))) / (a * 2)} </br>`;
                 raizes.innerHTML += `x<sub>2</sub> = ${((b * -1) - (delta**(1/2))) / (a * 2)}`;
             } else if (delta < 0) {
-                compOuR(`es Complexas`);
+                compOuR(`s (Complex)`);
                 raizes.innerHTML = `x<sub>1</sub> = ${(b * -1) / (a * 2)} + i*${((delta * -1)**(1/2)) / (a * 2)} </br>`;
                 raizes.innerHTML += `x<sub>2</sub> = ${(b * -1) / (a * 2)} - i*${((delta * -1)**(1/2)) / (a * 2)}`;
             }
